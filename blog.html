@@ -10,7 +10,7 @@
     />
   </head>
   <body class="container">
-    <h1 class="text-center">Hello, world!</h1>
+    <h1 class="text-center my-5">This is Blog page.</h1>
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
         <div class="card">
@@ -32,38 +32,49 @@
       </div>
       <div class="col">
         <div class="card">
-          <img src="..." class="card-img-top" alt="..." />
+          <img src="imgs/scope.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">
+              Difference between Global scope and Block scope in JS.
+            </h5>
             <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+              Global scope means that the value of a variable exists everywhere.
+              And block scope means that the value of a variable will exist only
+              within a specific scope. If called from outside that scope, the
+              variable will not be available.
             </p>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img src="..." class="card-img-top" alt="..." />
+          <img src="imgs/event-loop.webp" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">What is an event loop in JavaScript?</h5>
             <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content.
+              The event loop is the secret behind JavaScript’s asynchronous
+              programming. JS executes all operations on a single thread, but
+              using a few smart data structures, it gives us the illusion of
+              multi-threading.
             </p>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img src="..." class="card-img-top" alt="..." />
+          <img src="imgs/undefined.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+            <h5 class="card-title">When we get undefined in JavaScript?</h5>
+            <p class="card-text">We get undefined for the following reasons.
+                <ul type="squared">
+                    <li>variable is not initialized</li>
+                    <li>No return in function</li>
+                    <li>Parameter that is not passed</li>
+                    <li>Property that does not exists on an object will give you undefined</li>
+                    <li>Set a value directly to undefined</li>
+                    <li>And many more reasons can be obtained</li>
+                    
+                  </ul>
             </p>
           </div>
         </div>
