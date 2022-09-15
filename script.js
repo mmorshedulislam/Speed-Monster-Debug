@@ -9,6 +9,7 @@ const modalBackground = document.getElementById("modal-background");
 // variables
 let userText = "";
 let errorCount = 0;
+console.log(errorCount);
 let startTime;
 let questionText = "";
 
@@ -39,6 +40,10 @@ const typeController = (e) => {
     return;
   }
 
+  // if (!validLetters.includes(newLetter)) {
+  //   return;
+  // }
+
   userText += newLetter;
 
   const newLetterCorrect = validate(newLetter);
@@ -48,6 +53,7 @@ const typeController = (e) => {
       newLetter === " " ? "▪" : newLetter
     }</span>`;
   } else {
+    errorCount += 1;
     display.innerHTML += `<span class="red">${
       newLetter === " " ? "▪" : newLetter
     }</span>`;
@@ -95,6 +101,8 @@ const gameOver = () => {
   // restart everything
   startTime = null;
   errorCount = 0;
+  // errorCount++;
+  console.log(errorCount);
   userText = "";
   display.classList.add("inactive");
 };
